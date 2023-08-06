@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Buscaminas Hunter X Hunter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/bandera.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css" title="Color">
+
+    <script type="module" src="../javascript/index.js"></script>
+
+
+</head>
+
+<header>
+</header>
+
+<body>
+    <nav id="izquierda">
+        <div id="imagen">
+            <img src="../img/gon y killua.jpg" alt="gonykillua">
+        </div>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <button type="button" class="btn btn-outline-light btn-lg" id="botoninicio">Inicio
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-light btn-lg" id="botonhistoria">Historia
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-light btn-lg" id="botonajustes">Ajustes
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-light btn-lg" id="botoninstrucciones">Instrucciones
+                </li>
+            </ul>
+        </div>
+
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-0 pb-0">
+                <section class="mb-4">
+                    <!-- Instagram -->
+                    <a id="insta" class="btn btn-outline-light" href="https://www.instagram.com/adrianmiralles99/"
+                        role="button">
+                        <img src="../img/insta.png">
+                        <i class="fab fa-instagram"></i></a>
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-white">Adrián Miralles</a>
+            </div>
+        </footer>
+
+
+    </nav>
+    <div id="fondo">
+
+        <div id="cajaprincipal" class="">
+            <div id="divinicio">
+                <h1>¿A quién de los dos escoges?</h1>
+                <div id="divgon">
+                    <img src="..//img/gon.PNG" alt="GON" title="GON" id="escogegon">
+                    <h3>gon freecss</h3>
+                    <audio id="hisokaost" src="../audio/hisoka.mp3" loop=""></audio>
+
+                </div>
+                <div id="divkillua">
+                    <img src="..//img/killua.PNG" alt="KILLUA" title="KILLUA" id="escogekillua">
+                    <h3>Killua Zoldyck</h3>
+                    <audio id="illumiost" src="../audio/illumi.mp3" loop=""></audio>
+                </div>
+            </div>
+            <div id="divhistoria">
+                <h1>Historia.</h1>
+                <br>
+                <p>Hunter X Hunter es un anime donde nuestros protagonistas deberán escapar de sus respectivos
+                    perseguidores.
+                </p>
+                <p>Killua de Illumi, su hermano psicópata que quiere llevarlo de vuelta a casa para que trabaje de
+                    asesino.
+                </p>
+                <p>Y Gon de Hisoka, que es un payaso bastante creepie que tiene una obsesión muy extraña con Gon</p>
+            </div>
+            <div id="divinstrucciones">
+                <h1>Instrucciones.</h1>
+                <br>
+                <p>El juego consiste en despejar todas las casillas de una pantalla que no oculten una mina.</p>
+
+                <p>Algunas casillas tienen un número, este número indica las minas que son en todas las casillas
+                    circundantes.
+                    Así, si una casilla tiene el número 3, significa que de las ocho casillas que hay alrededor (si no
+                    es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla sin número
+                    indica que ninguna de las casillas vecinas tiene mina y estas se descubren automáticamente.</p>
+
+                <p>Si se descubre una casilla con una mina se pierde la partida.</p>
+
+                <p>Se puede poner una marca (click derecho) en las casillas que el jugador piensa que hay minas para
+                    ayudar a descubrir
+                    las que están cerca.</p>
+            </div>
+            <div id="divajustes">
+                <h1>Ajustes.</h1>
+                <br>
+                <li><button type="button" class="btn btn-outline-light btn-sm" id="boton_facil">MODO
+                        PRINCIPIANTE</button><span>En el modo fácil el tablero es 9 x 9 y hay 10 bombas.</li></span>
+                <li><button type="button" class="btn btn-outline-light btn-sm" id="boton_normal">MODO
+                        NORMAL</button><span>En el modo normal el tablero es 12 x 12 y hay 30 bombas.</li></span>
+                <li><button type="button" class="btn btn-outline-light btn-sm" id="boton_dificil">MODO
+                        DIFÍCIL</button><span>En el modo difícil el tablero es 15 x 15 y hay 60 bombas.</li></span>
+            </div>
+            <div id="victoria">
+
+            </div>
+            <div id="derrota">
+
+            </div>
+ 
+            <div class="tablero" id="tablero">
+
+            </div>
+            <div id ="resultado">
+
+            </div>
+
+        </div>
+    </div>
+    <nav id=derecha>
+        <div id="nbombas">
+            <img src="../img/hisokabomba.jpg" alt="bombas" id = "nbombashisoka">
+            <span id ="cantidadbombas">5</span>
+
+        </div>
+        <div id="cantbanderas">
+            <img src="../img/bandera.png" alt="bandera">
+            <span id ="cantidadbanderas">5</span>
+        </div>
+        <div id="cronometro">
+            <span id ="segundos">
+
+            </span>
+        </div>
+        <div id="restart">
+        <button type="button" class="btn btn-outline-warning btn-lg" id="botonrestart">Restart</button>
+        </div>
+
+    </nav>
+
+</body>
+
+</html>
